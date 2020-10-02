@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400&display=swap");
 body {
-  background-color: #CFEDE3;
+  background-color: #FFFF;
   color: #021327;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -12,23 +12,65 @@ body {
 body h1,
 body h2 {
   font-family: "Pacifico", cursive;
+  color: #97D8C3;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 .navbar {
-  background-color: #E3F3ED;
+  border-top: 2px solid #97D8C3;
+  border-bottom: 2px solid #97D8C3;
+  margin: 10px 0;
+}
+
+.navbar ul {
+  margin: 0;
 }
 
 .navbar li {
   display: inline-block;
   margin: 0 15px;
-  padding: 5px;
-}
-
-.navbar li:hover {
-  background-color: #EDCDD8;
 }
 
 .navbar a {
   text-decoration: none;
   color: #021327;
+}
+
+.navbar a:hover {
+  -webkit-text-decoration: underline #97D8C3;
+          text-decoration: underline #97D8C3;
+}
+
+.about {
+  padding: 0 60px;
+}
+
+.about .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-img {
+  width: 15vw;
+  border-radius: 100%;
+}
+
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery-container .gallery-img {
+  height: 40vh;
+  margin: 5px;
 }

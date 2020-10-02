@@ -3,8 +3,8 @@
 //Variables
 $header-font: 'Pacifico', cursive;
 $main-font: 'Poppins', sans-serif;
-$background: #CFEDE3;
-$secondary-color: #E3F3ED;
+$background: #FFFF;
+$secondary-color: #97D8C3;
 $font-color: #021327;
 $accent-color: #EDCDD8;
 
@@ -12,7 +12,7 @@ body {
     background-color: $background;
     color: $font-color;
     font-family: $main-font;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -20,25 +20,51 @@ body {
     h1,
     h2 {
         font-family: $header-font;
+        color: $secondary-color;
+        text-shadow: 1px 1px 2px #000000; 
     }
 }
 
 .navbar {
-    background-color: $secondary-color;
+    border-top: 2px solid $secondary-color;
+    border-bottom: 2px solid $secondary-color;
+    margin: 10px 0;
+    ul{
+        margin: 0;
+    }
     li{
         display: inline-block;
         margin: 0 15px;
-        padding: 5px;
-        &:hover {
-            background-color: $accent-color;
-        }
     }
     a {
         text-decoration: none;
         color: $font-color;
-
+        &:hover {
+            text-decoration: underline $secondary-color ;
+        }
     }
+}
 
+.about{
+    padding: 0 60px;
+    .about-content {
+        display: flex;
+        align-items: center;
+    }
+    .about-img {
+        width: 15vw;
+        border-radius: 100%;
+    }
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .gallery-img {
+        height: 40vh;  
+        margin: 5px;
+    }
 }
 
 
