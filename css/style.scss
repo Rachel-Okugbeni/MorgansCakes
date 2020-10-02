@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400&display=swap');
+
+//Variables
+$header-font: 'Pacifico', cursive;
+$main-font: 'Poppins', sans-serif;
+$background: #CFEDE3;
+$secondary-color: #E3F3ED;
+$font-color: #021327;
+$accent-color: #EDCDD8;
+
+body {
+    background-color: $background;
+    color: $font-color;
+    font-family: $main-font;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    h1,
+    h2 {
+        font-family: $header-font;
+    }
+}
+
+.navbar {
+    background-color: $secondary-color;
+    li{
+        display: inline-block;
+        margin: 0 15px;
+        padding: 5px;
+        &:hover {
+            background-color: $accent-color;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $font-color;
+
+    }
+
+}
+
+
