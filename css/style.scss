@@ -3,8 +3,8 @@
 //Variables
 $header-font: 'Pacifico', cursive;
 $main-font: 'Poppins', sans-serif;
-$background: #FFFF;
-$secondary-color: #97D8C3;
+$background: #ffffff;
+$secondary-color: #B4EBCA;
 $font-color: #021327;
 $accent-color: #EDCDD8;
 
@@ -64,6 +64,26 @@ body {
     .gallery-img {
         height: 40vh;  
         margin: 5px;
+    }
+}
+
+
+.form-container {
+    background-color: $secondary-color;
+    width: 40vw;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.set {
+    margin: 15px;
+    span {
+        font-size: 0.8rem;
+        font-style: italic;
     }
 }
 

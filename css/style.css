@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400&display=swap");
 body {
-  background-color: #FFFF;
+  background-color: #ffffff;
   color: #021327;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -12,13 +12,13 @@ body {
 body h1,
 body h2 {
   font-family: "Pacifico", cursive;
-  color: #97D8C3;
+  color: #B4EBCA;
   text-shadow: 1px 1px 2px #000000;
 }
 
 .navbar {
-  border-top: 2px solid #97D8C3;
-  border-bottom: 2px solid #97D8C3;
+  border-top: 2px solid #B4EBCA;
+  border-bottom: 2px solid #B4EBCA;
   margin: 10px 0;
 }
 
@@ -37,8 +37,8 @@ body h2 {
 }
 
 .navbar a:hover {
-  -webkit-text-decoration: underline #97D8C3;
-          text-decoration: underline #97D8C3;
+  -webkit-text-decoration: underline #B4EBCA;
+          text-decoration: underline #B4EBCA;
 }
 
 .about {
@@ -73,4 +73,27 @@ body h2 {
 .gallery-container .gallery-img {
   height: 40vh;
   margin: 5px;
+}
+
+.form-container {
+  background-color: #B4EBCA;
+  width: 40vw;
+  padding: 20px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.set {
+  margin: 15px;
+}
+
+.set span {
+  font-size: 0.8rem;
+  font-style: italic;
 }
